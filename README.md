@@ -4,6 +4,45 @@ This repo contains the code of the backend service that powers our app https://c
 
 Our service connects the FE with the APIs of Google Document AI to process initial resume file and OpenAI newest chatGPT API to perform conversation such that the desired tailored CV results as output at the moment the user considers appropiate. 
 
-### Screenshot
+### Uptime model of the service
 
 ![](./uptime-model.png)
+
+### Core function
+
+The conexion with the newest ChatGPT API ours via this class: 
+
+```python 
+
+class Conversation:
+    base_array = [{"role": "system", "content": "You are a helpful assistant."}]
+
+    def __init__(
+        self,
+    ):
+        self.chat_array = self.base_array
+        self.response = ""
+
+    def conversation_int(self, prompt):
+        new_message = {"role": "user", "content": prompt}
+        if self.response == "":
+            self.chat_array = self.chat_array + [new_message]
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", messages=self.chat_array
+            )
+            self.response = completion
+        else:
+            old_response = {
+                "role": "assistant",
+                "content": self.response["choices"][0]["message"]["content"],
+            }
+            self.chat_array = self.chat_array + [old_response, new_message]
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", messages=self.chat_array
+            )
+            self.response = completion
+
+        return completion
+```
+
+By which we can store the conversation between the system and the user in cache memory using the object attribute `Conversation.chat_array`. For more details of the usage you can check this post in our blog space in Deepnote: https://deepnote.com/@Workijobs/chatgpt-api-90cd8e01-718f-4d5d-96bb-04641b2075ed
