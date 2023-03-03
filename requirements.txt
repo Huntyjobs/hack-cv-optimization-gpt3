@@ -1,0 +1,23 @@
+fastapi>=0.68.0,<0.69.0
+pydantic>=1.8.0,<2.0.0
+uvicorn>=0.15.0,<0.16.0
+python-dotenv==0.20.0
+requests==2.27.1
+python-multipart==0.0.5
+pytube==12.1.2
+whisper==1.1.10
+cachetools==5.0.0
+
+
+# Document AI
+google-cloud-documentai==2.13.0
+
+# latexenc
+pylatexenc==2.10
+#pdf
+pdfplumber==0.8.0
+
+#docx
+python-docx==0.8.11
+# openai
+openai==0.27.0
