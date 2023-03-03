@@ -1,6 +1,6 @@
 ## hack-cv-optimization-gpt3
 
-To use our app please consider a [CV template](https://github.com/Huntyjobs/hack-cv-optimization-gpt3/blob/main/Model%20CV.pdf) that fits ATS format of recruiters. 
+To use our app please consider a [CV template](https://github.com/Huntyjobs/hack-cv-optimization-gpt3/blob/main/Model%20CV.pdf) that fits ATS format of recruiters. The app requires a private token that was given as additional info in the submisssion to the staff of the hackaton. 
 
 This repo contains the code of the backend service that powers our [app](https://cvoptimization-dev.hunty.cloud/). The FE was build on React and belongs to a microfrontends ecosystem that is private to our company. However the interesting part of the whole product can be found here, as follows.
 
