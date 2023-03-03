@@ -44,7 +44,7 @@ def process_document(
         response = client.process_document(request)
 
         if file_english:
-            Funciones = "Functions:"
+            Funciones = "Responsibilities:"
             Logros = "Achievements:"
         else:
             Funciones = "Funciones:"
