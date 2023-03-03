@@ -6,4 +6,4 @@ Our service connects the FE with the APIs of Google Document AI to process initi
 
 ### Screenshot
 
-![](./docs/screenshot.png)
+![](./uptime-model.png)
