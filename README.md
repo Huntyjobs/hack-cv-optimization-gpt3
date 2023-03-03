@@ -8,7 +8,7 @@ Our service connects the FE with the APIs of Google Document AI to process initi
 
 ### Uptime model of the service
 
-![](https://drive.google.com/file/d/1oJgFDa9p-Eq-_FNE_7XCUgO0IUGWFqsu/view?usp=sharing)
+![](./uptime-model.png)
 
 ### Core function
 
