@@ -12,7 +12,7 @@ Our service connects the FE with the APIs of Google Document AI to process initi
 
 ### Core function
 
-The conexion with the newest ChatGPT API ours via this [class](https://github.com/Huntyjobs/hack-cv-optimization-gpt3/blob/main/src/services/conversation.py) : 
+The conexion with the newest ChatGPT API occurs via this [class](https://github.com/Huntyjobs/hack-cv-optimization-gpt3/blob/main/src/services/conversation.py) : 
 
 ```python 
 
